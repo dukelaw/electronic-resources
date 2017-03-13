@@ -45,6 +45,7 @@
 
 * Outline
 ** Outline
+   - Learning Outcomes
    - Getting Started
    - Documentation & The Support Center
    - Updating
@@ -53,6 +54,16 @@
    #+BEGIN_NOTES
    - 1 minute
    #+END_NOTES
+
+* Learning Outcomes
+  #+ATTR_REVEAL: :frag (appear appear appear)
+  - Learn how to use the Client Center
+  - Understand how data in the Knowledgebase gets updated
+  - Become familiar with how eresource data relates to Duke systems
+
+    #+BEGIN_NOTES
+    - 3 minutes
+    #+END_NOTES
 * Getting Started
 ** Logging In
    - https://clientcenter.serialssolutions.com/CC/Login/Default.aspx
@@ -66,23 +77,49 @@
    - Get an account from Perkins ERSM
    #+END_NOTES
 ** Products
+   #+ATTR_REVEAL: :frag (appear appear appear appear appear appear)
    - 360 Core
    - Ulrichsweb
    - 360 Link
    - 360 MARC Updates
    - 360 Search
    - Summon
+   
+   #+BEGIN_NOTES
+   - go through each one and explain what they are
+   - 3 minutes
+   #+END_NOTES
+
 ** Support Center & Online Community
+   #+CAPTION: Where to find help
    [[./img/support.PNG]]
 
-* Documentation Resources
-  - [[https://knowledge.exlibrisgroup.com/360_KB/Product_Documentation/General_Knowledgebase_Information/360_KB%253A_Overview_of_the_Knowledgebase][Overview of the Knowledgebase]]
+* Knowledgebase
+** Documentation Resources
+   - [[https://knowledge.exlibrisgroup.com/360_KB/Product_Documentation/General_Knowledgebase_Information/360_KB%253A_Overview_of_the_Knowledgebase][Overview of the Knowledgebase]]
+   - Discovery is being driven by the quality of the metadata that is available
+   - The Knowledgebase is what we actually purchase access to and that Ex
+     Libris/ProQuest is actually updating. 
 
+     #+BEGIN_NOTES
+     - make sure they know what this is called
+     #+END_NOTES
+** Parts of the KB
+
+*** Providers
+   #+CAPTION: William S. Hein provider record
+
+   - [[./img/HeinProvider.png]]
+
+   #+BEGIN_NOTES
+   Providers are the publishers of a database or other electronic resource  
+   #+END_NOTES
 * Normalization
 
-  - Authority titles
   #+CAPTION: Multiple holdings of same title
   [[./img/holdings.png]]
+
+ - Authority titles
 
 * KB Updates
   - [[https://knowledge.exlibrisgroup.com/360_KB/Product_Documentation/General_Content/360_KB%253A_Summary_of_Provider_and_Database_Changes/360_KB%253A_Summary_of_Provider_and_Database_Changes][Summary of Provider and Database Changes]]
