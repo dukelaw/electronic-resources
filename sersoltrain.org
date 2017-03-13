@@ -1,0 +1,92 @@
+#+TITLE: Serials Solutions
+#+DATE: <2017-03-13 Mon>
+#+AUTHOR: Sean Chen
+#+EMAIL: schen@law.duke.edu
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:{} arch:headline author:t c:nil
+#+OPTIONS: creator:nil d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t
+#+OPTIONS: num:nil p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
+#+OPTIONS: timestamp:t title:t toc:nil todo:t |:t
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+CREATOR: Emacs 25.1.1 (Org mode 8.3.6)
+#+OPTIONS: reveal_center:t reveal_control:t reveal_height:-1
+#+OPTIONS: reveal_history:nil reveal_keyboard:t reveal_overview:t
+#+OPTIONS: reveal_progress:t reveal_rolling_links:nil reveal_single_file:nil
+#+OPTIONS: reveal_slide_number:"c" reveal_title_slide:auto reveal_width:-1
+#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
+#+REVEAL_MARGIN: -1
+#+REVEAL_MIN_SCALE: -1
+#+REVEAL_MAX_SCALE: -1
+#+REVEAL_TRANS: default
+#+REVEAL_SPEED: default
+#+REVEAL_THEME: simple
+#+REVEAL_EXTRA_CSS:
+#+REVEAL_EXTRA_JS:
+#+REVEAL_HLEVEL: 1
+#+REVEAL_TITLE_SLIDE_BACKGROUND:
+#+REVEAL_TITLE_SLIDE_BACKGROUND_SIZE:
+#+REVEAL_TITLE_SLIDE_BACKGROUND_REPEAT:
+#+REVEAL_TITLE_SLIDE_BACKGROUND_TRANSITION:
+#+REVEAL_MATHJAX_URL: https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+#+REVEAL_PREAMBLE:
+#+REVEAL_HEAD_PREAMBLE:
+#+REVEAL_POSTAMBLE:
+#+REVEAL_MULTIPLEX_ID:
+#+REVEAL_MULTIPLEX_SECRET:
+#+REVEAL_MULTIPLEX_URL:
+#+REVEAL_MULTIPLEX_SOCKETIO_URL:
+#+REVEAL_SLIDE_HEADER:
+#+REVEAL_SLIDE_FOOTER:
+#+REVEAL_PLUGINS: notes
+#+REVEAL_DEFAULT_FRAG_STYLE:
+#+REVEAL_INIT_SCRIPT:
+#+REVEAL_HIGHLIGHT_CSS: %r/lib/css/zenburn.css
+
+* Outline
+** Outline
+   - Getting Started
+   - Documentation & The Support Center
+   - Updating
+   - MARC Updates
+
+   #+BEGIN_NOTES
+   - 1 minute
+   #+END_NOTES
+* Getting Started
+** Logging In
+   - https://clientcenter.serialssolutions.com/CC/Login/Default.aspx
+
+   [[./img/login.PNG]]
+
+   - Getting an account
+
+   #+BEGIN_NOTES
+   - 2 minute
+   - Get an account from Perkins ERSM
+   #+END_NOTES
+** Products
+   - 360 Core
+   - Ulrichsweb
+   - 360 Link
+   - 360 MARC Updates
+   - 360 Search
+   - Summon
+** Support Center & Online Community
+   [[./img/support.PNG]]
+
+* Documentation Resources
+  - [[https://knowledge.exlibrisgroup.com/360_KB/Product_Documentation/General_Knowledgebase_Information/360_KB%253A_Overview_of_the_Knowledgebase][Overview of the Knowledgebase]]
+
+* Normalization
+
+  - Authority titles
+  #+CAPTION: Multiple holdings of same title
+  [[./img/holdings.png]]
+
+* KB Updates
+  - [[https://knowledge.exlibrisgroup.com/360_KB/Product_Documentation/General_Content/360_KB%253A_Summary_of_Provider_and_Database_Changes/360_KB%253A_Summary_of_Provider_and_Database_Changes][Summary of Provider and Database Changes]]
+
+* MARC Updates
+
+* Slide 3
