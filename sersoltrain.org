@@ -9,7 +9,7 @@
 #+LANGUAGE: en
 #+SELECT_TAGS: export
 #+EXCLUDE_TAGS: noexport
-#+CREATOR: Emacs 25.1.1 (Org mode 8.3.6)
+#+CREATOR: Emacs 25.1.1 (Org mode 8.3.6
 #+OPTIONS: reveal_center:t reveal_control:t reveal_height:-1
 #+OPTIONS: reveal_history:nil reveal_keyboard:t reveal_overview:t
 #+OPTIONS: reveal_progress:t reveal_rolling_links:nil reveal_single_file:nil
@@ -47,9 +47,11 @@
 ** Outline
    - Learning Outcomes
    - Getting Started
-   - Documentation & The Support Center
-   - Updating
+   - Knowledgebase
+   - Updating the KB
    - MARC Updates
+   - Searching & Finding
+   - Exercises
 
    #+BEGIN_NOTES
    - 1 minute
@@ -57,14 +59,16 @@
 
 * Learning Outcomes
   #+ATTR_REVEAL: :frag (appear appear appear)
-  - Learn how to use the Client Center
   - Understand how data in the Knowledgebase gets updated
   - Become familiar with how eresource data relates to Duke systems
+  - Learn how to use the Client Center
 
     #+BEGIN_NOTES
     - 3 minutes
     #+END_NOTES
+
 * Getting Started
+
 ** Logging In
    - https://clientcenter.serialssolutions.com/CC/Login/Default.aspx
 
@@ -96,34 +100,236 @@
 
 * Knowledgebase
 ** Documentation Resources
+   #+ATTR_REVEAL: :frag (appear appear appear appear appear appear)
    - [[https://knowledge.exlibrisgroup.com/360_KB/Product_Documentation/General_Knowledgebase_Information/360_KB%253A_Overview_of_the_Knowledgebase][Overview of the Knowledgebase]]
+     - ProQuest description
+     - Scope of content: Ebooks, Ejournals, Databases
    - Discovery is being driven by the quality of the metadata that is available
    - The Knowledgebase is what we actually purchase access to and that Ex
-     Libris/ProQuest is actually updating. 
+     Libris/ProQuest is actually updating.
+   - Data is being maintained by SerSol staff
 
      #+BEGIN_NOTES
      - make sure they know what this is called
      #+END_NOTES
-** Parts of the KB
+     
+** Entities in the KB
+   
+   How is the world of electronic resources modeled in the Serials Solutions
+   Knowledgebase?
 
 *** Providers
    #+CAPTION: William S. Hein provider record
-
-   - [[./img/HeinProvider.png]]
+   [[./img/HeinProvider.PNG]]
 
    #+BEGIN_NOTES
    Providers are the publishers of a database or other electronic resource  
    #+END_NOTES
-* Normalization
 
-  #+CAPTION: Multiple holdings of same title
-  [[./img/holdings.png]]
+*** Database
+    #+CAPTION: Database record for HeinOnline Law Journal Library
+    [[./img/HeinDatabase.PNG]]
 
- - Authority titles
+    #+BEGIN_NOTES
+    Databases have a relationship to a single provider
+    #+END_NOTES
 
-* KB Updates
-  - [[https://knowledge.exlibrisgroup.com/360_KB/Product_Documentation/General_Content/360_KB%253A_Summary_of_Provider_and_Database_Changes/360_KB%253A_Summary_of_Provider_and_Database_Changes][Summary of Provider and Database Changes]]
+*** Holding
+    #+CAPTION: Holding record for AAPG Bulletin in Single Journals
+    [[./img/Holding.png]]
+    
+    #+BEGIN_NOTES
+    Holdings are the individual URLs and chronological coverage that each
+    resource has. There is bibliographic data here but that is specific to the
+    holding and allows the Knowledgebase to link titles together
+    #+END_NOTES
+
+*** Titles
+
+   #+CAPTION: Multiple holdings of same title
+   [[./img/holdings.png]]
+
+   #+BEGIN_NOTES
+   represent the controlled or authoritative version
+   #+END_NOTES
+
+*** Model
+
+    [[./img/SerSolModel.png]]
+
+** KB Normalization 
+   - Serials Solutions ID (SSID)
+     - SSJ: in title views and in MARC records
+     - SSIB: in title views and in MARC records
+   - Title ID: holding ID in reports
+   - Databases have identifiers also
+   - Constantly updating the KB identifying resources that are the same
+
+     #+BEGIN_NOTES
+     2 mins
+     - give some examples here
+     #+END_NOTES
+
+* Updating the KB
+
+  - Continually updating
+  - In the support center:
+    - [[https://knowledge.exlibrisgroup.com/360_KB/Product_Documentation/General_Content/360_KB%253A_Summary_of_Provider_and_Database_Changes/360_KB%253A_Summary_of_Provider_and_Database_Changes][Summary of Provider and Database Changes]]
+
+** Typical Support Request
+  #+ATTR_REVEAL: :frag (appear appear appear)
+  - Discover that there is a problem
+  - Open a case
+  - Monitor that case
+  - Follow up as necessary
+
+*** Opening a Case
+    - Through the ExL Salesforce Customer Portal
+    - Request an account from Perkins
+    - Make sure the grants are correct
+
+*** Salesforce
+    #+CAPTION: Submitting a case
+    [[./img/SalesForce.png]]
+
+*** Tips for Success
+    - include as much detail as possible in the original request
+    - most data changes have to go to another stage
+      - a separate data management team at SerSol
+** Local Changes
+   What sorts of things do folks here at the Law Library and at ERSM do?
+
+*** Activations
+    - At the database level
+      - subscribed
+      - not tracked
+      - title coverage: "we only subscribe to some titles"
+    - At the holding level "subscribing"
+      - Subscribed
+      - Not tracked
+      #+BEGIN_NOTES
+      describe at the database level how you need to make sure the database is
+      configured to be all or some
+      #+END_NOTES
+
+*** Activations
+    - We have some control over the coverage dates
+      - This comes from our license information or our agreement
+      - There is some specialized formatting to say something like Current
+        year only
+    - We leave local notes in "shared" databases
 
 * MARC Updates
 
-* Slide 3
+  - Weekly process
+  - Matches the authority versions of journals and ebooks to MARC records
+  - separate records for print and online!
+  - Records are loaded each week
+
+** Matching
+   - Generally the process seems to be based on LCCN
+   - Prefer print
+   - Will generate a brief record with no match
+
+** Loading
+   - Records are loaded on a weekly basis
+   - overlap and match based on SSID
+   - Records are sorted into brief and full
+
+** MARC Records   
+   - 901: SSID
+   - 904: Source of Record
+   - 915: Database
+   - 916: Provider
+   - 856: URL
+   - 035: SSID
+
+   #+BEGIN_NOTES
+   1m:
+
+   Note when these things change in addition to the description we get an
+   updated record.
+
+   But we don't get a new record when URLs change from same holding
+   #+END_NOTES
+
+** SerSol MARC Fields
+   #+CAPTION: Example MARC fields
+   [[./img/SerSolMarc.PNG]]
+
+   #+BEGIN_NOTES
+   Note that the names are controlled to what Serials Solutions uses
+   #+END_NOTES
+
+* Searching & Finding 
+** eBooks
+
+  - https://library.duke.edu/find/ebooks
+
+   #+BEGIN_NOTES
+   - 1 min
+   - generated from data within the knowledgebase
+   - searchable list
+   - also called the A-Z list
+   - Law library users can access this 
+   #+END_NOTES
+
+** eBooks
+   #+CAPTION: Finding eBooks
+   [[./img/findEbooks.png]]
+   #+BEGIN_NOTES
+   - 1 min
+   - there is both a search and a browse
+   - displays the authoritative version of the database
+   #+END_NOTES
+
+** Online Journals
+
+  - https://library.duke.edu/find/journal-titles
+   #+BEGIN_NOTES
+   - 1 min
+   - generated from data within the knowledgebase
+   - searchable list
+   - also called the A-Z list
+   #+END_NOTES
+
+** Online Journals
+   #+CAPTION: Finding Online Journals
+   [[./img/findOnlineJournals.PNG]]
+   #+BEGIN_NOTES
+   - 1 min
+   #+END_NOTES
+
+** Catalog
+   - Searching the catalog
+   - MARC records create searchable descriptions in Endeca
+   - URLs go to the "1-Click"
+     - displays the resource in a browser window with additional controls to
+       navigate to other providers
+     - The database you go to is configured by a priority order
+
+* Exercises
+** Exercise 1
+   - Find the journal: The Supreme Court review in the Online Journal Finder
+   - What databases is it available in to Duke users?
+
+** Exercise 2
+   - Find the journal The Supreme Court review in Serials Solutions Client
+     Center
+   - What databases is it activateable in?
+
+** Exercise 3
+   - Find the journal: "The Supreme Court Review" in the catalog
+   - What database and provider are you taken to
+** Exercise 4
+   - Find the database: LexisNexis Academic
+   - How many holdings are there (titles)?
+   - How would we figure out which library is responsible for this db?
+
+** Exercise 5
+   - Search for the book: "Just mercy" in the Client Center
+   - How many titles are there?
+   - Which one does Duke have available
+     - and with what database and provider?
+
+* COMMENT
