@@ -98,6 +98,7 @@
    #+CAPTION: Where to find help
    [[./img/support.PNG]]
 
+** Exercise
 * Knowledgebase
 ** Documentation Resources
    #+ATTR_REVEAL: :frag (appear appear appear appear appear appear)
@@ -157,6 +158,7 @@
 
     [[./img/SerSolModel.png]]
 
+
 ** KB Normalization 
    - Serials Solutions ID (SSID)
      - SSJ: in title views and in MARC records
@@ -170,6 +172,7 @@
      - give some examples here
      #+END_NOTES
 
+** Exercise
 * Updating the KB
 
   - Continually updating
@@ -219,6 +222,7 @@
         year only
     - We leave local notes in "shared" databases
 
+** Exercise
 * MARC Updates
 
   - Weekly process
@@ -261,6 +265,7 @@
    Note that the names are controlled to what Serials Solutions uses
    #+END_NOTES
 
+** Exercise
 * Searching & Finding 
 ** eBooks
 
