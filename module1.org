@@ -1,6 +1,6 @@
 #+TITLE: Serials Solutions
 #+DATE: <2017-03-13 Mon>
-#+AUTHOR: Sean Chen
+#+AUTHOR: J. Michael Goodson Law Library
 #+EMAIL: schen@law.duke.edu
 #+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:{} arch:headline author:t c:nil
 #+OPTIONS: creator:nil d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t
@@ -44,14 +44,13 @@
 #+REVEAL_HIGHLIGHT_CSS: %r/lib/css/zenburn.css
 
 * Outline
-** Outline
-   - Learning Outcomes
-   - Getting Started
-   - Knowledgebase
-   - Updating the KB
-   - MARC Updates
-   - Searching & Finding
-   - Exercises
+  - Learning Outcomes
+  - Getting Started
+  - Knowledgebase
+  - Updating the KB
+  - MARC Updates
+  - Searching & Finding
+  - Exercises
 
    #+BEGIN_NOTES
    - 1 minute
@@ -68,7 +67,6 @@
     #+END_NOTES
 
 * Getting Started
-
 ** Logging In
    - https://clientcenter.serialssolutions.com/CC/Login/Default.aspx
 
@@ -80,6 +78,7 @@
    - 2 minute
    - Get an account from Perkins ERSM
    #+END_NOTES
+
 ** Products
    #+ATTR_REVEAL: :frag (appear appear appear appear appear appear)
    - 360 Core
@@ -98,6 +97,7 @@
    #+CAPTION: Where to find help
    [[./img/support.PNG]]
 
+
 ** Exercise
 * Knowledgebase
 ** Documentation Resources
@@ -114,7 +114,12 @@
      - make sure they know what this is called
      #+END_NOTES
      
-** Entities in the KB
+** KnowledgeWorks
+   - The branded name for the knowledgebase that SerialsSolutions will often
+     use
+   - Part of the 360 Core service
+   - Accessed and maintained using the Client Center
+** Entities in the Knowledgebase 
    
    How is the world of electronic resources modeled in the Serials Solutions
    Knowledgebase?
@@ -148,23 +153,27 @@
 *** Titles
 
    #+CAPTION: Multiple holdings of same title
-   [[./img/holdings.png]]
-
+   [[./img/DLJHoldings.PNG]]
    #+BEGIN_NOTES
-   represent the controlled or authoritative version
+   - represent the controlled or authoritative version
    #+END_NOTES
 
 *** Model
-
+    #+CAPTION: Entity relationships in the knowledgebase
     [[./img/SerSolModel.png]]
 
+    #+BEGIN_NOTES
+    + 2 mins
+    - explain the cardinality and relationships
+    #+END_NOTES
+** Knowledgebase Normalization 
 
-** KB Normalization 
    - Serials Solutions ID (SSID)
-     - SSJ: in title views and in MARC records
-     - SSIB: in title views and in MARC records
+     - SSJ: Client center title view, MARC records, Management reports: stable!
+     - SSIB: MARC reports, management reports: these are unstable!
    - Title ID: holding ID in reports
-   - Databases have identifiers also
+     - in offline editor, management reports, URLs
+   - Databases have identifiers also: called database codes
    - Constantly updating the KB identifying resources that are the same
 
      #+BEGIN_NOTES
@@ -173,6 +182,14 @@
      #+END_NOTES
 
 ** Exercise
+   #+BEGIN_NOTES
+   - ask for an example provider
+   - ask for example databases
+   - ask for example title
+   - ask for example holdings
+   - ask why identifiers are important?
+   #+END_NOTES
+
 * Updating the KB
 
   - Continually updating
@@ -199,8 +216,10 @@
     - include as much detail as possible in the original request
     - most data changes have to go to another stage
       - a separate data management team at SerSol
+
 ** Local Changes
-   What sorts of things do folks here at the Law Library and at ERSM do?
+   What sorts of things do folks here at the Law Library and at Duke
+   University Libraries?
 
 *** Activations
     - At the database level
@@ -241,12 +260,12 @@
    - Records are sorted into brief and full
 
 ** MARC Records   
-   - 901: SSID
+   - 035: SSID: (SSJ or SSIB)
+   - 901: SSID: (SSJ or SSIB)
    - 904: Source of Record
    - 915: Database
    - 916: Provider
    - 856: URL
-   - 035: SSID
 
    #+BEGIN_NOTES
    1m:
@@ -266,10 +285,16 @@
    #+END_NOTES
 
 ** Exercise
+
+   #+BEGIN_NOTES
+   - example of some catalog searches
+   #+END_NOTES
+
 * Searching & Finding 
 ** eBooks
 
   - https://library.duke.edu/find/ebooks
+  - User centered - pushes to faceted catalog searches
 
    #+BEGIN_NOTES
    - 1 min
@@ -285,12 +310,18 @@
    #+BEGIN_NOTES
    - 1 min
    - there is both a search and a browse
-   - displays the authoritative version of the database
    #+END_NOTES
 
+** eBooks
+
+   #+CAPTION: [[http://pm6mt7vg3j.search.serialssolutions.com/ejp/?libHash=PM6MT7VG3J#/?titleType=BOOKS&language=en-US][Online Book Finder]]
+
+   [[./img/EbookFinder.PNG]] 
+   
 ** Online Journals
 
   - https://library.duke.edu/find/journal-titles
+
    #+BEGIN_NOTES
    - 1 min
    - generated from data within the knowledgebase
