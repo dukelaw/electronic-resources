@@ -1,4 +1,4 @@
-#+TITLE: Serials Solutions: Module 2
+#+TITLE: Serials Solutions
 #+DATE: <2017-03-22 Wed>
 #+AUTHOR: J. Michael Goodson Law Library
 #+EMAIL: schen@law.duke.edu
